@@ -1,20 +1,17 @@
 package boardgame;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 import boardgame.model.*;
 import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXML;
-import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.StackPane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
-
 import org.tinylog.Logger;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class BoardGameController {
 
@@ -258,8 +255,6 @@ public class BoardGameController {
         newSquare.getChildren().addAll(oldSquare.getChildren());
         oldSquare.getChildren().clear();
         gamestate=!gamestate;
-        if(checkGame())
-            Logger.info("Gameover");
     }
 
 }

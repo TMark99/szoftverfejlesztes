@@ -12,6 +12,7 @@ public class BoardGameModelTest {
     void testlength()
     {
         assertEquals(pieces.length,3);
+
     }
 
 }

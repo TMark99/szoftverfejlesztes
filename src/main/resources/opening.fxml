@@ -31,7 +31,7 @@
          <font>
             <Font name="System Bold" size="36.0" />
          </font></Button>
-      <Button fx:id="startButton1" layoutX="442.0" layoutY="193.0" mnemonicParsing="false" onAction="#startAction" prefHeight="51.0" prefWidth="105.0" text="Top10" textFill="#ae3d00">
+      <Button fx:id="ListPLayers" layoutX="442.0" layoutY="193.0" mnemonicParsing="false" onAction="#ListPlayersAction" prefHeight="51.0" prefWidth="105.0" text="Players List" textFill="#ae3d00">
          <font>
             <Font name="System Bold" size="14.0" />
          </font></Button>
