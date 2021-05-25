@@ -16,5 +16,10 @@ public class RedDirectionTest {
     @Test
     void testOf_shouldThrowException() {
         assertThrows(IllegalArgumentException.class, () -> RedDirection.of(-1, 1));
+        assertThrows(IllegalArgumentException.class, () -> RedDirection.of(-1, 0));
+        assertThrows(IllegalArgumentException.class, () -> RedDirection.of(-1, 1));
+        assertThrows(IllegalArgumentException.class, () -> RedDirection.of(0, 1));
+        assertThrows(IllegalArgumentException.class, () -> RedDirection.of(0, -1));
+
     }
 }

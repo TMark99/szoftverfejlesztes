@@ -35,7 +35,7 @@ public class Piece {
      * @param piece a bábu amit kiütnek
      */
     public void kill(Piece piece){
-        this.IsAlive = false;
+        IsAlive = false;
     }
 
     /**

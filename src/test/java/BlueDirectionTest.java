@@ -17,5 +17,9 @@ public class BlueDirectionTest {
     @Test
     void testOf_shouldThrowException() {
         assertThrows(IllegalArgumentException.class, () -> BlueDirection.of(1, 1));
+        assertThrows(IllegalArgumentException.class, () -> BlueDirection.of(1, 0));
+        assertThrows(IllegalArgumentException.class, () -> BlueDirection.of(1, -1));
+        assertThrows(IllegalArgumentException.class, () -> BlueDirection.of(0, 1));
+        assertThrows(IllegalArgumentException.class, () -> BlueDirection.of(0, -1));
     }
 }
