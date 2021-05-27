@@ -100,9 +100,9 @@ public class BoardGameModelTest {
         for (int i =0; i<3; i++)
             model.move(8,BlueDirection.UP);
 
-        assertEquals(model.isValidMoveBlue(1,BlueDirection.UP),false);
-        assertEquals(model.isValidMoveBlue(1,BlueDirection.UP_RIGHT),true);
-        assertEquals(model.isValidMoveBlue(1,BlueDirection.UP_RIGHT),true);
+        assertEquals(model.isValidMoveBlue(10,BlueDirection.UP),false);
+        assertEquals(model.isValidMoveBlue(10,BlueDirection.UP_RIGHT),true);
+        assertEquals(model.isValidMoveBlue(10,BlueDirection.UP_LEFT),true);
     }
 
     @Test
